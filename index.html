@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>VinoWeb</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+        .cards-imagenes {
+            aspect-ratio: 16/9;
+            object-fit: cover;
+
+        }
+
+        .logo {
+            filter: drop-shadow(4px 4px 8px rgba(153, 8, 8, 8));
+            width: 80px;
+            height: 80px;
+        }
+        .botl {
+            filter: drop-shadow(4px 4px 8px rgb(243, 230, 47));
+            width: 220px;
+            height: 80px;
+        }
+
+
+        .termos {
+            color: coral;
+            text-align: left;
+
+        }
+    </style>
+</head>
+
+<body class="bg-danger-subtle">
+    <!-- comienza NavBar -->
+    <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="copita.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top logo">
+                Tierra de Vinos</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Conocenos</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Comprar <i class="bi bi-cart3"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Vinos</a></li>
+                            <li><a class="dropdown-item" href="#">Cavas</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Experiencias</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Tierra de Bobal.com</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Qué te gustaría probar hoy???"
+                        aria-label="Search" />
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- acabo NavBar -->
+    <main class="container-fluid ">
+
+        <header>
+            <h1> Tierra de Bobal </h1>
+
+        </header>
+
+        <!-- empieza carrusel -->
+
+
+        <div class="d-flex  justify-content-center">
+            <div class="w-75">
+                <div id="carouselExample" class="carousel slide d-flex" style="height: 300px;">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <video autoplay loop>
+                                <source src="racim2.mp4" width="1024" height="552" type="video/mp4">
+
+                            </video>
+                        </div>
+                        <div class="carousel-item">
+                            <video autoplay loop>
+                                <source src="racimo.mp4" width="1024" height="552" type="video/mp4">
+
+                            </video>
+                        </div>
+                        <div class="carousel-item">
+                            <video autoplay loop>
+                                <source src="blanco.mov" width="1024" height="552" type="video/mp4">
+
+                            </video>
+                        </div>
+
+
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- acaba carrusel -->
+
+        <!-- 3 columnas -->
+
+        <div class="container text-center mt-5">
+            <div class="row">
+                <div class="col">
+
+                    <!-- meto card 1-->
+                    <div class="card bg-warning-subtle ">
+                        <img src="botellas.jpg" class="card-img-top cards-imagenes " alt="botellas">
+                        <div class="card-body">
+                            <h5 class="card-title">BODEGA</h5>
+                            <p class="card-text">Aquí encontrarás nuestros mejores vinos.</p>
+                            <a href="#" class="btn btn-primary">ACCEDER</a>
+                        </div>
+                    </div>
+
+                    <!-- ACABO card 1 -->
+
+                </div>
+
+                <div class="col">
+
+                    <!-- meto card 2-->
+
+                    <div class="card bg-warning-subtle">
+                        <img src="barriles.jpg" class="card-img-top cards-imagenes" alt="barriles">
+                        <div class="card-body">
+                            <h5 class="card-title">VISITAS</h5>
+                            <p class="card-text">Conoce los mejores viñedos y bodegas en persona.</p>
+                            <a href="#" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">ACCEDER</a>
+                        </div>
+
+                        <!-- meto el modal -->
+
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Bodegas en UtielRequena</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>
+                                            <a href="https://utielrequena.org/nuestras-bodegas/">UtielRequena</a>
+                                        </p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Cerrar</button>
+                                        <button type="button" class="btn btn-primary">Volver a la web</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- finiquito el modal -->
+
+                    </div>
+
+                    <!-- ACABO card 2 -->
+
+                </div>
+                <div class="col">
+
+                    <!-- meto card 3-->
+                    <div class="card bg-warning-subtle">
+                        <img src="catas.jpg" class="card-img-top cards-imagenes" alt="cata">
+                        <div class="card-body">
+                            <h5 class="card-title">CATAS</h5>
+                            <p class="card-text">Apuntate desde ahora mismo a nuestras catas.</p>
+                            <a href="#" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">ACCEDER</a>
+                        </div>
+                    </div>
+
+
+
+                    <!-- ACABO card 3 -->
+
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- meto el footer con formulario-->
+    <footer class="bg-dark text-white text-center">
+        <div class="container">
+            <h1>Unete a nuestro club de vinos</h1>
+
+            <hr>
+
+
+        </div>
+        <div class="container text-center mt-5">
+            <div class="row">
+                <div class="col">
+            <form>
+                <div class="mb-2">
+                    <label class="form-label" for="nombre">Nombre</label>
+                    <input autofocus class="form-control bg-danger-subtle" type="text" name="nombre" id="nombre">
+                </div>
+                <div class="mb-2">
+                    <label class="form-label " for="nombre">Email</label>
+                    <input class="form-control bg-danger-subtle" type="text" name="email" id="email">
+                </div>
+                <div class="mb-2">
+                    <label for="">Región</label>
+                    <select class="form-select bg-danger-subtle" name="select" id="select">
+                        <option selected>Elige tu región</option>
+                        <option value="opcion1">Península</option>
+                        <option value="opcion2">Baleares</option>
+                        <option value="opcion3">Canarias</option>
+                    </select>
+                </div>
+                <div class="mb-2">
+                    <label class="form-label" for="comentarios">Estás interesad@ en ...</label>
+                    <textarea class="form-control bg-danger-subtle" name="comentarios" id="comentarios">
+                </textarea>
+                </div>
+                <div>
+                    <div class="form-check"> <label class="form-check-label" for="acepto"><i
+                                class="bi bi-thermometer termos"></i> Cavas</label>
+                        <input class="form-check-input" type="radio" name="color" id="cavas">
+                    </div>
+                    <div class="form-check"> <label class="form-check-label" for="acepto"><i
+                                class="bi bi-thermometer-low termos"></i> Blancos</label>
+                        <input class="form-check-input" type="radio" name="color" id="blancos">
+                    </div>
+                    <div class="form-check"> <label class="form-check-label" for="acepto"><i
+                                class="bi bi-thermometer-half termos "></i> Rosados</label>
+                        <input class="form-check-input" type="radio" name="color" id="rosados">
+                    </div>
+
+                    <div class="form-check"> <label class="form-check-label" for="acepto"><i
+                                class="bi bi-thermometer-high termos"></i> Tintos</label>
+                        <input class="form-check-input" type="radio" name="color" id="tintos">
+                    </div>
+                    <div class="form-check"> <label class="form-check-label" for="acepto"><i
+                                class="bi bi-thermometer-snow termos"></i> Espirituosos</label>
+                        <input class="form-check-input" type="radio" name="color" id="espirituosos">
+                    </div>
+
+                </div>
+                <hr>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="acepto" id="acepto">
+                    <label class="form-check-label" for="acepto">Acepto las condiciones</label>
+                </div>
+                <hr>
+                <button type="button" class="btn btn-primary bg-danger">Enviar</button>
+            </form>
+                </div>
+                <div class="col">
+                    <h3>Síguenos aquí</h3>
+                    <ul>
+                        <hr>
+                            <i class="bi bi-instagram"></i>
+                            <hr>
+                            <i class="bi bi-twitter-x"></i>
+                            <hr>
+                            <i class="bi bi-telegram"></i>
+                            <hr>
+                            <i class="bi bi-tiktok"></i>
+                    
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3>Encuentranos aquí</h3>
+                    <hr>
+                    <i class="bi bi-radar"></i>
+                    <hr>
+                   
+                     <img src="botellsss.svg" alt="botellines" width="30" height="24" class="d-inline-block align-text-top botl">
+                    
+
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3079.16305610043!2d-1.1039678240346271!3d39.4882325716039!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMznCsDI5JzE3LjYiTiAxwrAwNicwNS4wIlc!5e0!3m2!1ses!2ses!4v1776421347565!5m2!1ses!2ses"
+                        width="400" height="300" style="border:25;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
